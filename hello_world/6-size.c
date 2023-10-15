@@ -1,12 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/**
- *  *main - prints the size of various types on the
- *   *computer it is compiled and run on
- *    *
- *     *Return:  0 on success. Error code otherwise
- *      */
+
 
 int main(void)
 {
