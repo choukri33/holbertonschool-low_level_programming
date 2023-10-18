@@ -2,18 +2,17 @@
 /**
  *main - prints all single digits from 0 to 9
  *followed by a new line
- * Return: 0
+ *Return: 0
  */
 int main(void)
 {
-	int numbers = 0;
+	int numberz = '0';
 
-	while (numbers <= 9)
+	while (numberz <= '9')
 	{
-		printf("%d", numbers);
-		numbers++;
+	putchar(numberz);
+	numberz++;
 	}
-
-	printf('\n');
 	return (0);
+	putchar('\n');
 }
