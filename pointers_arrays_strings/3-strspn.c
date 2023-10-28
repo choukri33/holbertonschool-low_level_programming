@@ -2,23 +2,37 @@
 #include "main.h"
 
 /**
- * _strcmp - compares two strings
- * @s1: first string to compare
- * @s2: second string to compare
+ * _strspn - get the length of a prefix substring
  *
- * Return: less than 0 if s1 is less than s2, 0 if they're equal,
- * more than 0 if s1 is greater than s2
+ * @s: segment to return bytes from
+ * @accept: bytes to include
+ *
+ * Return: number of bytes in the initial segment of s
+ * which consist only of bytes from accept
+ *
  */
-int _strcmp(char *s1, char *s2)
+
+unsigned int _strspn(char *s, char *accept)
 {
-	while (*s1 == *s2)
+	int i, j;
+	int c = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*s1 == '\0')
+		if (s[i] != ' ')
 		{
-			return (0);
+			for (j = 0; accept[j] != '\0'; j++)
+			{
+				if (s[i] == accept[j])
+				{
+					c++;
+				}
+			}
 		}
-		s1++;
-		s2++;
+		else
+		{
+			return (c);
+		}
 	}
-	return (*s1 - *s2);
+	return (c);
 }
