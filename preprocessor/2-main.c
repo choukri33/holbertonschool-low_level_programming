@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- *  * main - prints the name of the source file
- *   *
- *    * Return: 0
- *     */
+ * main - prints the name of the source file
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
